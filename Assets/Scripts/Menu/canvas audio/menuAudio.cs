@@ -5,12 +5,21 @@ using UnityEngine.SceneManagement;
 public class menuAudio : MonoBehaviour
 {
 
+	public bool pauseActivated = false;
+
+	void Update()
+	{
+		if (pauseActivated)
+			Pause ();
+		else
+			Resume ();
+	}
 
 			
 	public void Pause()
 
 	{
-		Debug.Log(Time.timeScale);
+		p_movement.InputActive = false;
 		Time.timeScale = 0;
 	}
 
@@ -19,11 +28,18 @@ public class menuAudio : MonoBehaviour
     {
         
        
-        Debug.Log(Time.timeScale);
+		p_movement.InputActive = true;
         Time.timeScale = 1;
-        Debug.Log(Time.timeScale);
-       
+        
     }
+
+	public void EffectOn(bool value)
+	{
+		if (value==true)
+			pauseActivated = true;
+		if (value == false)
+			pauseActivated = false;
+	}
 
 
 

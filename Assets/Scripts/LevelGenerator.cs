@@ -40,6 +40,7 @@ public class LevelGenerator : MonoBehaviour {
         {
             if (col.gameObject.tag == "Player")
             {
+			ScoreController.score += 10;
                 GenerateStage();
 
             }

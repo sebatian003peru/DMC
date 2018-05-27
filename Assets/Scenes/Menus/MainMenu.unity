@@ -460,7 +460,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &433305083
 GameObject:
@@ -542,8 +542,9 @@ GameObject:
   - component: {fileID: 460013924}
   - component: {fileID: 460013923}
   - component: {fileID: 460013927}
+  - component: {fileID: 460013928}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -621,7 +622,7 @@ RectTransform:
   - {fileID: 2018658014}
   - {fileID: 154605809}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -639,6 +640,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faceaadc3f778e947a042b292d67951e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &460013928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460013922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b07b84daa1de649a8e760c44afb33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseActivated: 0
 --- !u!1 &559314598
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +664,7 @@ GameObject:
   - component: {fileID: 559314601}
   - component: {fileID: 559314600}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -727,7 +740,7 @@ RectTransform:
   - {fileID: 1016357452}
   - {fileID: 1209872198}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -947,7 +960,6 @@ GameObject:
   m_Component:
   - component: {fileID: 886195214}
   - component: {fileID: 886195215}
-  - component: {fileID: 886195216}
   m_Layer: 5
   m_Name: PauseToggle
   m_TagString: Untagged
@@ -1039,9 +1051,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 886195216}
-        m_MethodName: Pause
-        m_Mode: 1
+      - m_Target: {fileID: 460013928}
+        m_MethodName: EffectOn
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1053,17 +1065,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
---- !u!114 &886195216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 886195213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74b07b84daa1de649a8e760c44afb33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &983990529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +1778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b07b84daa1de649a8e760c44afb33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseActivated: 0
 --- !u!1 &1419115951
 GameObject:
   m_ObjectHideFlags: 0

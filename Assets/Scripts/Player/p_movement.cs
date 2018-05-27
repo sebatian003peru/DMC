@@ -10,7 +10,7 @@ public class p_movement : MonoBehaviour {
     private Vector3 targetPosition;
     private bool isMoving;
 
-
+	public static bool InputActive =true;
 
     // Use this for initialization
     void Start()
@@ -32,7 +32,9 @@ public class p_movement : MonoBehaviour {
         {
             
             Debug.DrawLine(ray.origin, hitInfo.point, Color.green, 0.01f);
-            if (Input.GetMouseButton(0))
+            
+			if(InputActive)
+			if (Input.GetMouseButton(0))
                 SetTargetPosition();
             if (isMoving)
                 MovePlayer();

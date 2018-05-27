@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -176,7 +176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &509673038
 GameObject:
@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 539002978}
   - component: {fileID: 539002977}
   - component: {fileID: 539002981}
+  - component: {fileID: 539002982}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -345,7 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -405,6 +406,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faceaadc3f778e947a042b292d67951e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &539002982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 539002976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7c4fa52301ed244965e39468c41322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1290635988}
 --- !u!1 &552134543
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7c4fa52301ed244965e39468c41322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1290635988}
+  scoreText: {fileID: 0}
 --- !u!23 &1243269623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -763,14 +776,14 @@ RectTransform:
   m_GameObject: {fileID: 1290635986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.13189559, y: 0.18635035, z: 1}
   m_Children: []
   m_Father: {fileID: 539002980}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46, y: 166.68}
+  m_AnchoredPosition: {x: 8, y: 37}
   m_SizeDelta: {x: 568.9, y: 115.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1290635988

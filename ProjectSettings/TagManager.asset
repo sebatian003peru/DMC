@@ -10,6 +10,7 @@ TagManager:
   - danger
   - exit
   - spawner
+  - Canvas
   layers:
   - Default
   - TransparentFX

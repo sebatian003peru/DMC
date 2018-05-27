@@ -5,35 +5,22 @@ using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour {
 
-    //public Text scoreText;
-    private int score;
+
+    public Text scoreText;
+	public static int score;
 
     void Start ()
     {
         score = 0;
-        UpdateScore();
+		//scoreText= GetComponent<Text> ();
+
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		
+		scoreText.text = "Score :" + score;
 	}
 
-     void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-            AddScore(1);
-    }
 
-    public void AddScore(int newScoreValue)
-    {
-        score += newScoreValue;
-        UpdateScore();
-    }
-
-    void UpdateScore()
-    {
-     //   scoreText.text = "Score: " + score;
-    }
 }
