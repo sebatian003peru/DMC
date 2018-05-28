@@ -29,7 +29,7 @@ public class LevelGenerator : MonoBehaviour {
             GenerateStage();
         }
 
-        if (totalRoomsSpawned >= 2)
+        if (totalRoomsSpawned >= 1)
         {
             Destroy(this.gameObject);
         }
