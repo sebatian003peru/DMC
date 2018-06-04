@@ -32,6 +32,7 @@ public class LevelGenerator : MonoBehaviour {
         if (totalRoomsSpawned >= 1)
         {
             Destroy(this.gameObject);
+
         }
     }
 
@@ -61,13 +62,15 @@ public class LevelGenerator : MonoBehaviour {
         //rotation = clone.transform.Find("exit").rotation;
         totalRoomsSpawned += 1;
         //foreach(int p in pattern){	
-
         //GameObject tile = tiles[p];
         //GameObject clone = Instantiate(tile, position, rotation);
-
-
         //selfDestruct = true;
 
+		GameObject[] dangerobj = GameObject.FindGameObjectsWithTag ("danger");
+		for (int i =0; i< dangerobj.Length; i++)
+		{
+			Destroy (dangerobj [i]);
+		}
 
     }
 

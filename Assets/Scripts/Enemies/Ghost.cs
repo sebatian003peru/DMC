@@ -19,6 +19,9 @@ public class Ghost : MonoBehaviour
         transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
 
+
+
         
     }
+
 }

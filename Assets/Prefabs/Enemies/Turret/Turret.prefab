@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb54917c22b60d408d98b9100e1380c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1489034102842954, guid: 6cf28ac0ab78fc54695796fd3b5f5ea4, type: 2}
+  bullet: {fileID: 1158698192168354, guid: b904066bc140ec043b92f37fe2ac637c, type: 2}
   Player: {fileID: 0}
   spawn: {fileID: 4778006852144630}
   fireRateCap: 5
