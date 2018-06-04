@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 65093314614392890}
   m_Layer: 0
   m_Name: BreakingFloor
-  m_TagString: Untagged
+  m_TagString: trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

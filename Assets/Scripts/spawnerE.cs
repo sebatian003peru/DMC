@@ -7,7 +7,8 @@ public class spawnerE : MonoBehaviour {
 	public GameObject entity;
 	int test;
 
-	void Start () {
+	void Start ()
+	{
 		
 	}
 	

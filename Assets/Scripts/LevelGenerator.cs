@@ -18,6 +18,7 @@ public class LevelGenerator : MonoBehaviour {
     public GameObject testing;
     int roomIndex;
     public Transform roomSpawn;
+	public int scoreValue=10;
     public int totalRoomsSpawned = 0;
 
 
@@ -41,7 +42,7 @@ public class LevelGenerator : MonoBehaviour {
         {
             if (col.gameObject.tag == "Player")
             {
-			ScoreController.score += 10;
+			ScoreController.score += scoreValue;
                 GenerateStage();
 
             }
