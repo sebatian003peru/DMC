@@ -12,6 +12,11 @@ TagManager:
   - spawner
   - Canvas
   - trap
+  - PM1
+  - PM2
+  - PM3
+  - PM4
+  - PM5
   layers:
   - Default
   - TransparentFX
