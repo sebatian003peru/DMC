@@ -19,6 +19,7 @@ public class ScoreController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+		DontDestroyOnLoad (this.gameObject);
 		scoreText.text = "Score :" + score;
 	}
 
