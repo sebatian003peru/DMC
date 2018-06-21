@@ -5,8 +5,8 @@ using UnityEngine;
 public class Ghost : MonoBehaviour
 {
     public Transform Player;
-    public float MoveSpeed = 1f;
 
+    Modelo speed = new Modelo();
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class Ghost : MonoBehaviour
     void Update()
     {
         transform.LookAt(Player);
-        transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+        transform.position += transform.forward * speed.MoveSpeed * Time.deltaTime;
 
 
 
