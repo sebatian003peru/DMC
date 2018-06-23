@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 1fcce69a801069d4499b22cb6f983105
-timeCreated: 1529330828
+guid: 195d185ec645ba74eb2c5b9c10437d29
+timeCreated: 1529708362
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -29,29 +29,8 @@ ModelImporter:
     100042: Base HumanSpine003
     100044: Base HumanSpine004
     100046: Base HumanSpine3
-    100048: pCube1
-    100050: pCube2
-    100052: pCube3
-    100054: pCube4
-    100056: pCube6
-    100058: pCylinder1
-    100060: pCylinder2
-    100062: pCylinder4
-    100064: pCylinder5
-    100066: pCylinder6
-    100068: pCylinder7
-    100070: pCylinder8
-    100072: //RootNode
-    100074: transform1
-    100076: transform10
-    100078: transform2
-    100080: transform3
-    100082: transform4
-    100084: transform5
-    100086: transform6
-    100088: transform7
-    100090: transform8
-    100092: transform9
+    100048: pCube6
+    100050: //RootNode
     400000: Base Human001
     400002: Base HumanHead001
     400004: Base HumanLCalf001
@@ -76,29 +55,8 @@ ModelImporter:
     400042: Base HumanSpine003
     400044: Base HumanSpine004
     400046: Base HumanSpine3
-    400048: pCube1
-    400050: pCube2
-    400052: pCube3
-    400054: pCube4
-    400056: pCube6
-    400058: pCylinder1
-    400060: pCylinder2
-    400062: pCylinder4
-    400064: pCylinder5
-    400066: pCylinder6
-    400068: pCylinder7
-    400070: pCylinder8
-    400072: //RootNode
-    400074: transform1
-    400076: transform10
-    400078: transform2
-    400080: transform3
-    400082: transform4
-    400084: transform5
-    400086: transform6
-    400088: transform7
-    400090: transform8
-    400092: transform9
+    400048: pCube6
+    400050: //RootNode
     2100000: lambert1
     4300000: pCube6
     7400000: Take 001

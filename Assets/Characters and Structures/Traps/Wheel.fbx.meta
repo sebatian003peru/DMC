@@ -1,67 +1,17 @@
 fileFormatVersion: 2
-guid: 088bf5de920bb814aa901ee05d846916
-timeCreated: 1529708362
+guid: 10657e5f163ace84a866c96a2cb82557
+timeCreated: 1529713164
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Base Human001
-    100002: Base HumanHead001
-    100004: Base HumanLCalf001
-    100006: Base HumanLCollarbone001
-    100008: Base HumanLFoot001
-    100010: Base HumanLForearm001
-    100012: Base HumanLPalm001
-    100014: Base HumanLPlatform001
-    100016: Base HumanLThigh001
-    100018: Base HumanLUpperarm001
-    100020: Base HumanNeck001
-    100022: Base HumanPelvis001
-    100024: Base HumanRCalf001
-    100026: Base HumanRCollarbone001
-    100028: Base HumanRFoot001
-    100030: Base HumanRForearm001
-    100032: Base HumanRibcage001
-    100034: Base HumanRPalm001
-    100036: Base HumanRPlatform001
-    100038: Base HumanRThigh001
-    100040: Base HumanRUpperarm001
-    100042: Base HumanSpine003
-    100044: Base HumanSpine004
-    100046: Base HumanSpine3
-    100048: pCube6
-    100050: //RootNode
-    400000: Base Human001
-    400002: Base HumanHead001
-    400004: Base HumanLCalf001
-    400006: Base HumanLCollarbone001
-    400008: Base HumanLFoot001
-    400010: Base HumanLForearm001
-    400012: Base HumanLPalm001
-    400014: Base HumanLPlatform001
-    400016: Base HumanLThigh001
-    400018: Base HumanLUpperarm001
-    400020: Base HumanNeck001
-    400022: Base HumanPelvis001
-    400024: Base HumanRCalf001
-    400026: Base HumanRCollarbone001
-    400028: Base HumanRFoot001
-    400030: Base HumanRForearm001
-    400032: Base HumanRibcage001
-    400034: Base HumanRPalm001
-    400036: Base HumanRPlatform001
-    400038: Base HumanRThigh001
-    400040: Base HumanRUpperarm001
-    400042: Base HumanSpine003
-    400044: Base HumanSpine004
-    400046: Base HumanSpine3
-    400048: pCube6
-    400050: //RootNode
-    2100000: lambert1
-    4300000: pCube6
-    7400000: Take 001
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert2
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCylinder1
     9500000: //RootNode
-    13700000: pCube6
   externalObjects: {}
   materials:
     importMaterials: 1

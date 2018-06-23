@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 0988fb1fda0471349990a17421cf379c
-timeCreated: 1529330828
+guid: 6911cabbb610d974ba5285e406f24795
+timeCreated: 1529708478
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Base Human001
+    100000: Base Human
     100002: Base HumanHead001
     100004: Base HumanLCalf001
     100006: Base HumanLCollarbone001
@@ -29,41 +29,9 @@ ModelImporter:
     100042: Base HumanSpine004
     100044: Base HumanSpine005
     100046: Base HumanSpine006
-    100048: pCone1
-    100050: pCube1
-    100052: pCube2
-    100054: pCylinder1
-    100056: pCylinder10
-    100058: pCylinder12
-    100060: pCylinder13
-    100062: pCylinder14
-    100064: pCylinder15
-    100066: pCylinder16
-    100068: pCylinder17
-    100070: pCylinder18
-    100072: pCylinder4
-    100074: pCylinder6
-    100076: pCylinder7
-    100078: pCylinder8
-    100080: pCylinder9
-    100082: //RootNode
-    100084: transform1
-    100086: transform10
-    100088: transform11
-    100090: transform12
-    100092: transform13
-    100094: transform14
-    100096: transform15
-    100098: transform16
-    100100: transform2
-    100102: transform3
-    100104: transform4
-    100106: transform5
-    100108: transform6
-    100110: transform7
-    100112: transform8
-    100114: transform9
-    400000: Base Human001
+    100048: //RootNode
+    100050: pCylinder7
+    400000: Base Human
     400002: Base HumanHead001
     400004: Base HumanLCalf001
     400006: Base HumanLCollarbone001
@@ -87,40 +55,8 @@ ModelImporter:
     400042: Base HumanSpine004
     400044: Base HumanSpine005
     400046: Base HumanSpine006
-    400048: pCone1
-    400050: pCube1
-    400052: pCube2
-    400054: pCylinder1
-    400056: pCylinder10
-    400058: pCylinder12
-    400060: pCylinder13
-    400062: pCylinder14
-    400064: pCylinder15
-    400066: pCylinder16
-    400068: pCylinder17
-    400070: pCylinder18
-    400072: pCylinder4
-    400074: pCylinder6
-    400076: pCylinder7
-    400078: pCylinder8
-    400080: pCylinder9
-    400082: //RootNode
-    400084: transform1
-    400086: transform10
-    400088: transform11
-    400090: transform12
-    400092: transform13
-    400094: transform14
-    400096: transform15
-    400098: transform16
-    400100: transform2
-    400102: transform3
-    400104: transform4
-    400106: transform5
-    400108: transform6
-    400110: transform7
-    400112: transform8
-    400114: transform9
+    400048: //RootNode
+    400050: pCylinder7
     2100000: lambert1
     4300000: pCylinder7
     7400000: Take 001
