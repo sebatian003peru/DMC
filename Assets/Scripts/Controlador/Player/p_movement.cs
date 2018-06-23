@@ -77,7 +77,7 @@ public class p_movement : MonoBehaviour {
         if (collision.gameObject.tag == "danger")
         {
            hp--;
-            GameObject.Find("PauseToggle").SetActive(false);
+            //GameObject.Find("PauseToggle").SetActive(false);
         }
     }
 }
