@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 901b29c776e4c5940bc7ec2a189a23af
-timeCreated: 1529708165
+guid: 3cbe757ff7e569c40bbc759e29a45f47
+timeCreated: 1529790775
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -24,7 +24,7 @@ ModelImporter:
     400014: transform2
     400016: //RootNode
     2000000: left
-    2100000: blinn4
+    2100000: blinn3
     2300000: pCube1
     2300002: pCube4
     3300000: pCube1
