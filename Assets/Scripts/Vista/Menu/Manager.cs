@@ -8,6 +8,8 @@ public class Manager : MonoBehaviour {
 	public string sceneName;
     public GameObject meinMenu;
     public GameObject optiones;
+    public GameObject salida;
+
 
 	public void Load()
 	{
@@ -28,7 +30,12 @@ public class Manager : MonoBehaviour {
         meinMenu.SetActive(false);
     }
 
-    
+    public void Exit()
+    {
+        salida.SetActive(true);
+        Debug.Log("sep, saliste");
+        Application.Quit();
+    }
 
 
 }
