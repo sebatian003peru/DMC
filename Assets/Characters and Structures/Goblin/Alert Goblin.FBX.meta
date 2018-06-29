@@ -31,6 +31,31 @@ ModelImporter:
     100046: Base HumanSpine2
     100048: Base HumanSpine3
     100050: pCube6
+    100052: Base Human001
+    100054: Base HumanHead001
+    100056: Base HumanLCalf001
+    100058: Base HumanLCollarbone001
+    100060: Base HumanLFoot001
+    100062: Base HumanLForearm001
+    100064: Base HumanLPalm001
+    100066: Base HumanLPlatform001
+    100068: Base HumanLThigh001
+    100070: Base HumanLUpperarm001
+    100072: Base HumanNeck001
+    100074: Base HumanPelvis001
+    100076: Base HumanRCalf001
+    100078: Base HumanRCollarbone001
+    100080: Base HumanRFoot001
+    100082: Base HumanRForearm001
+    100084: Base HumanRibcage001
+    100086: Base HumanRPalm001
+    100088: Base HumanRPlatform001
+    100090: Base HumanRThigh001
+    100092: Base HumanRUpperarm001
+    100094: Base HumanSpine004
+    100096: Base HumanSpine005
+    100098: Base HumanSpine006
+    100100: pCube8
     400000: //RootNode
     400002: Base Human
     400004: Base HumanHead
@@ -57,11 +82,39 @@ ModelImporter:
     400046: Base HumanSpine2
     400048: Base HumanSpine3
     400050: pCube6
+    400052: Base Human001
+    400054: Base HumanHead001
+    400056: Base HumanLCalf001
+    400058: Base HumanLCollarbone001
+    400060: Base HumanLFoot001
+    400062: Base HumanLForearm001
+    400064: Base HumanLPalm001
+    400066: Base HumanLPlatform001
+    400068: Base HumanLThigh001
+    400070: Base HumanLUpperarm001
+    400072: Base HumanNeck001
+    400074: Base HumanPelvis001
+    400076: Base HumanRCalf001
+    400078: Base HumanRCollarbone001
+    400080: Base HumanRFoot001
+    400082: Base HumanRForearm001
+    400084: Base HumanRibcage001
+    400086: Base HumanRPalm001
+    400088: Base HumanRPlatform001
+    400090: Base HumanRThigh001
+    400092: Base HumanRUpperarm001
+    400094: Base HumanSpine004
+    400096: Base HumanSpine005
+    400098: Base HumanSpine006
+    400100: pCube8
     2100000: lambert1
+    2100002: blinn2
     4300000: pCube6
+    4300002: pCube8
     7400000: Take 001
     9500000: //RootNode
     13700000: pCube6
+    13700002: pCube8
   externalObjects: {}
   materials:
     importMaterials: 1

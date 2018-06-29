@@ -30,6 +30,30 @@ ModelImporter:
     100044: Base HumanSpine004
     100046: pCube7
     100048: //RootNode
+    100050: Base Human003
+    100052: Base HumanHead002
+    100054: Base HumanLCalf002
+    100056: Base HumanLCollarbone002
+    100058: Base HumanLFoot002
+    100060: Base HumanLForearm002
+    100062: Base HumanLPalm002
+    100064: Base HumanLPlatform002
+    100066: Base HumanLThigh002
+    100068: Base HumanLUpperarm002
+    100070: Base HumanNeck002
+    100072: Base HumanPelvis002
+    100074: Base HumanRCalf002
+    100076: Base HumanRCollarbone002
+    100078: Base HumanRFoot002
+    100080: Base HumanRForearm002
+    100082: Base HumanRibcage002
+    100084: Base HumanRPalm002
+    100086: Base HumanRPlatform002
+    100088: Base HumanRThigh002
+    100090: Base HumanRUpperarm002
+    100092: Base HumanSpine005
+    100094: Base HumanSpine006
+    100096: pCube008
     400000: Base Human002
     400002: Base HumanHead001
     400004: Base HumanLCalf001
@@ -55,11 +79,38 @@ ModelImporter:
     400044: Base HumanSpine004
     400046: pCube7
     400048: //RootNode
+    400050: Base Human003
+    400052: Base HumanHead002
+    400054: Base HumanLCalf002
+    400056: Base HumanLCollarbone002
+    400058: Base HumanLFoot002
+    400060: Base HumanLForearm002
+    400062: Base HumanLPalm002
+    400064: Base HumanLPlatform002
+    400066: Base HumanLThigh002
+    400068: Base HumanLUpperarm002
+    400070: Base HumanNeck002
+    400072: Base HumanPelvis002
+    400074: Base HumanRCalf002
+    400076: Base HumanRCollarbone002
+    400078: Base HumanRFoot002
+    400080: Base HumanRForearm002
+    400082: Base HumanRibcage002
+    400084: Base HumanRPalm002
+    400086: Base HumanRPlatform002
+    400088: Base HumanRThigh002
+    400090: Base HumanRUpperarm002
+    400092: Base HumanSpine005
+    400094: Base HumanSpine006
+    400096: pCube008
     2100000: lambert1
+    2100002: blinn4
     4300000: pCube7
+    4300002: pCube008
     7400000: Take 001
     9500000: //RootNode
     13700000: pCube7
+    13700002: pCube008
   externalObjects: {}
   materials:
     importMaterials: 1

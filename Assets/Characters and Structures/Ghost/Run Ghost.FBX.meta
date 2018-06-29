@@ -27,6 +27,27 @@ ModelImporter:
     100038: Base HumanTail007
     100040: pCylinder1
     100042: //RootNode
+    100044: Base Human
+    100046: Base HumanHead
+    100048: Base HumanLCollarbone
+    100050: Base HumanLForearm
+    100052: Base HumanLPalm
+    100054: Base HumanLUpperarm
+    100056: Base HumanNeck1
+    100058: Base HumanNeck2
+    100060: Base HumanPelvis
+    100062: Base HumanRCollarbone
+    100064: Base HumanRForearm
+    100066: Base HumanRibcage
+    100068: Base HumanRPalm
+    100070: Base HumanRUpperarm
+    100072: Base HumanSpine1
+    100074: Base HumanSpine2
+    100076: Base HumanSpine3
+    100078: Base HumanSpine4
+    100080: Base HumanTail1
+    100082: Base HumanTail2
+    100084: pCylinder3
     400000: Base Human005
     400002: Base HumanHead001
     400004: Base HumanLCollarbone001
@@ -49,10 +70,35 @@ ModelImporter:
     400038: Base HumanTail007
     400040: pCylinder1
     400042: //RootNode
+    400044: Base Human
+    400046: Base HumanHead
+    400048: Base HumanLCollarbone
+    400050: Base HumanLForearm
+    400052: Base HumanLPalm
+    400054: Base HumanLUpperarm
+    400056: Base HumanNeck1
+    400058: Base HumanNeck2
+    400060: Base HumanPelvis
+    400062: Base HumanRCollarbone
+    400064: Base HumanRForearm
+    400066: Base HumanRibcage
+    400068: Base HumanRPalm
+    400070: Base HumanRUpperarm
+    400072: Base HumanSpine1
+    400074: Base HumanSpine2
+    400076: Base HumanSpine3
+    400078: Base HumanSpine4
+    400080: Base HumanTail1
+    400082: Base HumanTail2
+    400084: pCylinder3
     2100000: lambert1
+    2100002: blinn2
     4300000: pCylinder1
+    4300002: pCylinder3
+    7400000: Take 001
     9500000: //RootNode
     13700000: pCylinder1
+    13700002: pCylinder3
   externalObjects: {}
   materials:
     importMaterials: 1

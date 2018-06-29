@@ -31,6 +31,31 @@ ModelImporter:
     100046: Base HumanSpine006
     100048: pCylinder7
     100050: //RootNode
+    100052: Base Human002
+    100054: Base HumanHead002
+    100056: Base HumanLCalf002
+    100058: Base HumanLCollarbone002
+    100060: Base HumanLFoot002
+    100062: Base HumanLForearm002
+    100064: Base HumanLPalm002
+    100066: Base HumanLPlatform002
+    100068: Base HumanLThigh002
+    100070: Base HumanLUpperarm002
+    100072: Base HumanNeck002
+    100074: Base HumanPelvis002
+    100076: Base HumanRCalf002
+    100078: Base HumanRCollarbone002
+    100080: Base HumanRFoot002
+    100082: Base HumanRForearm002
+    100084: Base HumanRibcage002
+    100086: Base HumanRPalm002
+    100088: Base HumanRPlatform002
+    100090: Base HumanRThigh002
+    100092: Base HumanRUpperarm002
+    100094: Base HumanSpine007
+    100096: Base HumanSpine008
+    100098: Base HumanSpine009
+    100100: pCylinder22
     400000: Base Human001
     400002: Base HumanHead001
     400004: Base HumanLCalf001
@@ -57,11 +82,39 @@ ModelImporter:
     400046: Base HumanSpine006
     400048: pCylinder7
     400050: //RootNode
+    400052: Base Human002
+    400054: Base HumanHead002
+    400056: Base HumanLCalf002
+    400058: Base HumanLCollarbone002
+    400060: Base HumanLFoot002
+    400062: Base HumanLForearm002
+    400064: Base HumanLPalm002
+    400066: Base HumanLPlatform002
+    400068: Base HumanLThigh002
+    400070: Base HumanLUpperarm002
+    400072: Base HumanNeck002
+    400074: Base HumanPelvis002
+    400076: Base HumanRCalf002
+    400078: Base HumanRCollarbone002
+    400080: Base HumanRFoot002
+    400082: Base HumanRForearm002
+    400084: Base HumanRibcage002
+    400086: Base HumanRPalm002
+    400088: Base HumanRPlatform002
+    400090: Base HumanRThigh002
+    400092: Base HumanRUpperarm002
+    400094: Base HumanSpine007
+    400096: Base HumanSpine008
+    400098: Base HumanSpine009
+    400100: pCylinder22
     2100000: lambert1
+    2100002: blinn2
     4300000: pCylinder7
+    4300002: pCylinder22
     7400000: Take 001
     9500000: //RootNode
     13700000: pCylinder7
+    13700002: pCylinder22
   externalObjects: {}
   materials:
     importMaterials: 1

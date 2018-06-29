@@ -56,6 +56,7 @@ ModelImporter:
     400046: //RootNode
     400048: pCube7
     2100000: lambert1
+    2100002: blinn4
     4300000: pCube7
     7400000: Take 001
     9500000: //RootNode
