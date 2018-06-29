@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: f8b254aae24a600448c8890fe3335af7
-timeCreated: 1529713164
+guid: d07517b6dc52f374c894b20d4b7e4856
+timeCreated: 1530311302
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert2
+    2100000: blinn2
     2300000: //RootNode
     3300000: //RootNode
     4300000: pCube1
