@@ -111,7 +111,12 @@ ModelImporter:
     9500000: //RootNode
     13700000: pCube7
     13700002: pCube008
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn4
+    second: {fileID: 2100000, guid: 061026540254f574d80a596412260137, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
