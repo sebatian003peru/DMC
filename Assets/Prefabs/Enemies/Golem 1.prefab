@@ -65,9 +65,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4357524627435208}
   - component: {fileID: 95489338160420030}
+  - component: {fileID: 114987676409289078}
+  - component: {fileID: 54827433296651010}
   m_Layer: 0
   m_Name: Golem 1
-  m_TagString: Untagged
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -506,8 +508,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1174854355257280}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.91, y: 1, z: 4.78}
+  m_LocalRotation: {x: 0, y: -0.75051486, z: 0, w: 0.6608536}
+  m_LocalPosition: {x: 24.687063, y: 0.6481408, z: 9.939644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4532423573241972}
@@ -517,7 +519,7 @@ Transform:
   - {fileID: 4053992705005744}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -97.27, z: 0}
 --- !u!4 &4401864362335436
 Transform:
   m_ObjectHideFlags: 1
@@ -738,6 +740,21 @@ Transform:
   m_Father: {fileID: 4673804038168166}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54827433296651010
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174854355257280}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &64862307786646350
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -761,7 +778,7 @@ Animator:
   m_GameObject: {fileID: 1174854355257280}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4fe8899785ddecf4a8c33fd789d4c7df, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7472c8d61139e6d46850db873b71810d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -769,6 +786,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114987676409289078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174854355257280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 300e5f17aa00a9f4a845a915d3aada47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  attackTime: 3
+  elapsedAttack: 0
 --- !u!137 &137856547593046868
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

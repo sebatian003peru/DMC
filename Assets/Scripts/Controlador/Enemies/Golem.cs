@@ -7,7 +7,6 @@ public class Golem : MonoBehaviour {
     public Transform Player;
     public float attackTime;
     public float elapsedAttack;
-
    // Vector3 lookPos;
 
 
