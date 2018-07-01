@@ -9,6 +9,7 @@ public class p_movement : MonoBehaviour {
     public int hp;
     private Vector3 targetPosition;
     private bool isMoving;
+    public bool touchActivated = true;
 
 	public static bool InputActive =true;
 
@@ -28,6 +29,7 @@ public class p_movement : MonoBehaviour {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitInfo;
 
+
         if (Physics.Raycast(ray, out hitInfo, 30f))
         {
             
@@ -45,7 +47,26 @@ public class p_movement : MonoBehaviour {
             Debug.DrawLine(ray.origin, ray.direction * 30f, Color.red, 0.01f);
         }
 
-      
+        if (Input.touchCount > 0 &&  Input.GetTouch(0).phase == TouchPhase.Began)
+       
+        {
+            RaycastHit hit;
+            Ray Touchray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+
+            if (Physics.Raycast(Touchray, out hit, 30f))
+            {
+                if (InputActive)
+                    if (Input.GetMouseButton(0))
+                        TouchControlPlayer();
+                if (isMoving)
+                    MovePlayer();
+            }
+               
+
+        }
+
+
+
 
     }
 
@@ -60,6 +81,20 @@ public class p_movement : MonoBehaviour {
 
         isMoving = true;
     }
+
+    void TouchControlPlayer()
+    {
+
+        Plane plane = new Plane(Vector3.up, transform.position);
+        Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        float point = 0f;
+
+        if (plane.Raycast(ray, out point))
+            targetPosition = ray.GetPoint(point);
+
+        isMoving = true;
+    }
+
 
     void MovePlayer()
     {
