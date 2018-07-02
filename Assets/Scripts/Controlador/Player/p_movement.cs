@@ -10,6 +10,7 @@ public class p_movement : MonoBehaviour {
     private Vector3 targetPosition;
     private bool isMoving;
     public bool touchActivated = true;
+    Animator anim;
 
 	public static bool InputActive =true;
 
@@ -18,52 +19,54 @@ public class p_movement : MonoBehaviour {
     {
         targetPosition = transform.position;
         isMoving = false;
+		anim = GetComponent<Animator> ();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (hp <= 0)
-            Destroy(this.gameObject);
+		if (hp <= 0) 
+		{
+			Destroy(this.gameObject,3);
+			anim.SetBool ("isDead", true);
+			anim.SetBool ("isRunning", false);
+			InputActive = false;
+		}
+        
+		if (InputActive) {
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			RaycastHit hitInfo;
 
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hitInfo;
 
-
-        if (Physics.Raycast(ray, out hitInfo, 30f))
-        {
+			if (Physics.Raycast (ray, out hitInfo, 30f)) {
             
-            Debug.DrawLine(ray.origin, hitInfo.point, Color.green, 0.01f);
+				Debug.DrawLine (ray.origin, hitInfo.point, Color.green, 0.01f);
             
-			if(InputActive)
-			if (Input.GetMouseButton(0))
-                SetTargetPosition();
-            if (isMoving)
-                MovePlayer();
+				if (InputActive)
+				if (Input.GetMouseButton (0))
+					SetTargetPosition ();
+				if (isMoving)
+					MovePlayer ();
             
-        }
-        else
-        {
-            Debug.DrawLine(ray.origin, ray.direction * 30f, Color.red, 0.01f);
-        }
+			} else {
+				Debug.DrawLine (ray.origin, ray.direction * 30f, Color.red, 0.01f);
+			}
 
-        if (Input.touchCount > 0 &&  Input.GetTouch(0).phase == TouchPhase.Began)
-       
-        {
-            RaycastHit hit;
-            Ray Touchray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+			if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began) {
+				RaycastHit hit;
+				Ray Touchray = Camera.main.ScreenPointToRay (Input.GetTouch (0).position);
 
-            if (Physics.Raycast(Touchray, out hit, 30f))
-            {
-                if (InputActive)
-                    if (Input.GetMouseButton(0))
-                        TouchControlPlayer();
-                if (isMoving)
-                    MovePlayer();
-            }
+				if (Physics.Raycast (Touchray, out hit, 30f)) {
+					if (InputActive)
+					if (Input.GetMouseButton (0))
+						TouchControlPlayer ();
+					if (isMoving)
+						MovePlayer ();
+				}
                
 
-        }
+			}
+		}
 
 
 
@@ -78,8 +81,10 @@ public class p_movement : MonoBehaviour {
 
         if (plane.Raycast(ray, out point))
             targetPosition = ray.GetPoint(point);
+        
 
         isMoving = true;
+		anim.SetBool("isRunning", true);
     }
 
     void TouchControlPlayer()
@@ -101,8 +106,11 @@ public class p_movement : MonoBehaviour {
         transform.LookAt(targetPosition);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        if (transform.position == targetPosition)
-            isMoving = false;
+		if (transform.position == targetPosition) {
+			isMoving = false;
+			anim.SetBool ("isRunning", false);
+		}
+		    
 
         Debug.DrawLine(transform.position, targetPosition, Color.red);
     }

@@ -17,6 +17,7 @@ public class Pendolum : MonoBehaviour {
 
     void Start () {
         center = reference.position;
+
 	}
 	
 	void Update () {

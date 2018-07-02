@@ -7,6 +7,7 @@ public class Golem : MonoBehaviour {
     public Transform Player;
     public float attackTime;
     public float elapsedAttack;
+    Animator Anim;
    // Vector3 lookPos;
 
 
@@ -15,6 +16,7 @@ public class Golem : MonoBehaviour {
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        Anim = GetComponent<Animator>();
        // lookPos = Player.position - transform.position;
         //lookPos.y = 0;
 
@@ -23,13 +25,13 @@ public class Golem : MonoBehaviour {
         
         void Update ()
     {
-        
+
         //Quaternion rotation = Quaternion.LookRotation(lookPos);
         //transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime);
 
 
         if (elapsedAttack >= attackTime)
-            Player.GetComponent<p_movement>().hp = -1;
+            Anim.SetBool("isAttacking", true);
 
 
 			
@@ -44,8 +46,8 @@ public class Golem : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-            elapsedAttack = 0;
+        //if (other.gameObject.tag == "Player")
+           // elapsedAttack = 0;
 		
     }
 
