@@ -6,6 +6,8 @@ public class FallingFloor : MonoBehaviour {
 
     public float breakingtime;
     public float decayTime;
+	public GameObject floorCol;
+	bool activated;
     Animator Anim;
     [SerializeField]
 
@@ -18,15 +20,25 @@ public class FallingFloor : MonoBehaviour {
     {
         if (decayTime >= breakingtime)
         {
-            
             Anim.SetBool("isFalling", true);
+			Destroy (floorCol.gameObject);
+			Destroy (this.gameObject,5);
         }
+
+		if (activated) 
+		{
+			decayTime += Time.deltaTime;
+		}
+			
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-            decayTime += Time.deltaTime;
+		if (other.gameObject.tag == "Player") {
+			activated=true;
+
+		}
+		
     }
 
 }

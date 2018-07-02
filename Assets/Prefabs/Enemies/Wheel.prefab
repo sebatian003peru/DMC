@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114486335477075800}
   m_Layer: 0
   m_Name: Wheel
-  m_TagString: Untagged
+  m_TagString: danger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,6 +58,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: ed34e105125984e4e83b80d659da2f40, type: 2}
   m_StaticBatchInfo:
@@ -132,6 +133,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114486335477075800
 MonoBehaviour:
   m_ObjectHideFlags: 1

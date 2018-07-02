@@ -5,6 +5,7 @@ using UnityEngine;
 public class Goblin : MonoBehaviour {
 
     Vector3 direction = new Vector3(0, 0, 1);
+	Vector3 goblinScale = new Vector3 (1, 1, 1);
     public float speed =1;
 
 
@@ -12,7 +13,7 @@ public class Goblin : MonoBehaviour {
     void Update()
     {
         transform.Translate(direction * Time.deltaTime * speed);
-       
+		transform.localScale = goblinScale;
     }
 
 
@@ -20,8 +21,13 @@ public class Goblin : MonoBehaviour {
     void OnCollisionEnter(Collision col)
     {
         //var tag = hit.gameObject.tag;
-        if (col.gameObject.tag == "rightwall" || col.gameObject.tag == "leftwall")
-            direction.z *= -1;
+		if (col.gameObject.tag == "rightwall" || col.gameObject.tag == "leftwall") 
+		{
+			direction.z *= -1;
+			goblinScale.z *= -1;
+
+		}
+         
         
     }
 }

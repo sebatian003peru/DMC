@@ -8,6 +8,7 @@ public class RockTrap : MonoBehaviour {
 	public float decayTime;
 	public Transform spawn;
 	public GameObject rock;
+	bool activated;
 	[SerializeField]
 
 	void Start () {
@@ -23,14 +24,19 @@ public class RockTrap : MonoBehaviour {
 			Instantiate (rock, spawn.position, spawn.rotation);
 		}
 			
-
+		if (activated) 
+		{
+			decayTime += Time.deltaTime;
+		}
 		   
 	}
 
 	private void OnTriggerStay(Collider other)
 	{
 		if (other.gameObject.tag == "Player")
-			decayTime += Time.deltaTime;
+		{
+			activated = true;
+		}
 	}
 
 }

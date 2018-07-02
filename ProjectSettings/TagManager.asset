@@ -17,6 +17,8 @@ TagManager:
   - PM3
   - PM4
   - PM5
+  - roomSpawner
+  - scoreMana
   layers:
   - Default
   - TransparentFX

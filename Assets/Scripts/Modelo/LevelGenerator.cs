@@ -22,7 +22,11 @@ public class LevelGenerator : MonoBehaviour {
     public int totalRoomsSpawned = 0;
 
 
-    // Update is called once per frame
+	void Start()
+	{
+		roomSpawn = GameObject.FindGameObjectWithTag ("roomSpawner").transform;
+	}
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -54,7 +58,7 @@ public class LevelGenerator : MonoBehaviour {
 	public void GenerateStage()
 	{
         
-        roomIndex = Random.Range(0,4);
+        roomIndex = Random.Range(0,roomAvalaible.Length);
 		//Vector3 starPosition = roomSpawn.transform.position;
 		//Vector3 position = starPosition;
 		//Quaternion rotation = transform.rotation;
@@ -66,11 +70,18 @@ public class LevelGenerator : MonoBehaviour {
         //GameObject tile = tiles[p];
         //GameObject clone = Instantiate(tile, position, rotation);
         //selfDestruct = true;
+		roomSpawn.position += new Vector3(52,0,0);
 
 		GameObject[] dangerobj = GameObject.FindGameObjectsWithTag ("danger");
 		for (int i =0; i< dangerobj.Length; i++)
 		{
 			Destroy (dangerobj [i]);
+		}
+
+		GameObject[] trapobj = GameObject.FindGameObjectsWithTag ("trap");
+		for (int i =0; i< trapobj.Length; i++)
+		{
+			Destroy (trapobj [i]);
 		}
 
     }

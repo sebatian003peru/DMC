@@ -15,6 +15,7 @@ public class CameraFollow : MonoBehaviour {
     {
        
         offset = transform.position - player.transform.position;
+
     }
 
     private void Update()
@@ -23,10 +24,11 @@ public class CameraFollow : MonoBehaviour {
         {
             SceneManager.LoadScene("GameOver");
         }
+		player = GameObject.FindGameObjectWithTag ("Player");
     }
     void LateUpdate()
     {
-        
+		if (player)
         transform.position = player.transform.position + offset;
         transform.rotation = Quaternion.Euler(45, 30, 0);
     }
