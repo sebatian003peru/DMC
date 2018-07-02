@@ -19,6 +19,7 @@ TagManager:
   - PM5
   - roomSpawner
   - scoreMana
+  - death
   layers:
   - Default
   - TransparentFX

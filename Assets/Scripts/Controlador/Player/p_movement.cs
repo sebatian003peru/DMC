@@ -10,6 +10,8 @@ public class p_movement : MonoBehaviour {
     private Vector3 targetPosition;
     private bool isMoving;
     public bool touchActivated = true;
+	private ScoreController sc;
+	int resetScore;
     Animator anim;
 
 	public static bool InputActive =true;
@@ -20,6 +22,7 @@ public class p_movement : MonoBehaviour {
         targetPosition = transform.position;
         isMoving = false;
 		anim = GetComponent<Animator> ();
+
     }
 
     // Update is called once per frame
@@ -122,6 +125,11 @@ public class p_movement : MonoBehaviour {
            hp--;
             //GameObject.Find("PauseToggle").SetActive(false);
         }
+		if (collision.gameObject.tag == "death")
+		{
+			hp--;
+			//GameObject.Find("PauseToggle").SetActive(false);
+		}
     }
 }
 
