@@ -42,6 +42,7 @@ public class Golem : MonoBehaviour {
         if (other.gameObject.tag == "Player")
             elapsedAttack += Time.deltaTime;
 		    transform.LookAt(Player);
+		    Anim.SetBool("isAttacking", true);
     }
 
     private void OnTriggerExit(Collider other)

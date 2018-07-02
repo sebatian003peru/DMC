@@ -5,7 +5,7 @@ using UnityEngine;
 public class Modelo : MonoBehaviour {
 
 	
-    public float MoveSpeed = 3f;
+    public float MoveSpeed = 5f;
 
 	// Use this for initialization
 	void Start () {
