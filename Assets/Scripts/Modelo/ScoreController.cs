@@ -11,6 +11,7 @@ public class ScoreController : MonoBehaviour {
 
     void Start ()
     {
+		UpdateScore ();
         score = 0;
 		//scoreText= GetComponent<Text> ();
 
@@ -20,7 +21,28 @@ public class ScoreController : MonoBehaviour {
 	void Update ()
     {
 		DontDestroyOnLoad (this.gameObject);
+
+	}
+
+	public void AddScore (int NewScoreValue, bool reset)
+	{
+		score += NewScoreValue;
+		UpdateScore ();
+
+		if (reset) 
+		{
+			ResetScore ();
+		}
+	}
+
+	public void UpdateScore()
+	{
 		scoreText.text = "Score :" + score;
+	}
+
+	public void ResetScore()
+	{
+		score = 0;
 	}
 
 

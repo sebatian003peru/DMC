@@ -1,30 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour {
 
-    //public enum TileType {
-    //typeA, typeB, typeC
-    //}
 
-    //public int minTile =0;
-    //public int maxTile =1;
-    //public GameObject[] tiles;
-    //public TileType[] pattern;
-
-    bool selfDestruct = false;
+   
     public GameObject[] roomAvalaible;
-    public GameObject testing;
     int roomIndex;
     public Transform roomSpawn;
 	public int scoreValue=10;
     public int totalRoomsSpawned = 0;
-
+	private ScoreController sc;
 
 	void Start()
 	{
+		GameObject gameScoreManager = GameObject.FindGameObjectWithTag ("scoreMana");
 		roomSpawn = GameObject.FindGameObjectWithTag ("roomSpawner").transform;
+
+		if (gameScoreManager != null)
+		{
+			sc = gameScoreManager.GetComponent<ScoreController>();
+
+		}
+		if (gameScoreManager == null)
+		{
+			Debug.Log ("Cannot find 'GameController' script");
+		}
+
+		//sc.AddScore (scoreValue, true);
 	}
 
     void Update()
@@ -32,6 +37,7 @@ public class LevelGenerator : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P))
         {
             GenerateStage();
+
         }
 
         if (totalRoomsSpawned >= 1)
@@ -39,6 +45,8 @@ public class LevelGenerator : MonoBehaviour {
             Destroy(this.gameObject);
 
         }
+
+
     }
 
 
@@ -46,7 +54,7 @@ public class LevelGenerator : MonoBehaviour {
         {
             if (col.gameObject.tag == "Player")
             {
-			ScoreController.score += scoreValue;
+			
                 GenerateStage();
 
             }
@@ -83,6 +91,9 @@ public class LevelGenerator : MonoBehaviour {
 		{
 			Destroy (trapobj [i]);
 		}
+
+		sc.AddScore (scoreValue, false);
+
 
     }
 
