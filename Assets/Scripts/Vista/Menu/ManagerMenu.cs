@@ -1,17 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class Manager : MonoBehaviour {
+public class ManagerMenu : MonoBehaviour {
 
 	public string sceneName;
     public GameObject MainMenu;
     public GameObject Optiones;
     public GameObject Salida;
+    public GameObject PauseToggle;
 
-
-	public void Load()
+   
+    public void Load()
 	{
 		SceneManager.LoadScene (sceneName);
         
@@ -20,14 +19,16 @@ public class Manager : MonoBehaviour {
     public void StartGame()
     {
         SceneManager.LoadScene (sceneName);
-        Optiones.SetActive(true);
+        //Optiones.SetActive(true);
+        PauseToggle.SetActive(true);
     }
     
 
-    public void Options()
+    public virtual void Options()
     {
-        Optiones.SetActive(true);
         MainMenu.SetActive(false);
+        Optiones.SetActive(true);
+        
     }
 
     public void Exit()

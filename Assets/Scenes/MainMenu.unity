@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -503,7 +503,6 @@ RectTransform:
   m_Children:
   - {fileID: 886195214}
   - {fileID: 2018658014}
-  - {fileID: 1261206793}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -520,9 +519,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 460013922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faceaadc3f778e947a042b292d67951e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1d07eae9ed5d71742bfc7ffbf720cc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Volume: {fileID: 2004631592}
+  Music: {fileID: 154605807}
+  pauseActivated: 0
 --- !u!114 &460013928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,10 +533,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 460013922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74b07b84daa1de649a8e760c44afb33e, type: 3}
+  m_Script: {fileID: 11500000, guid: 336b53e5c6a2d534f87f865929b96e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseActivated: 0
 --- !u!1 &507452472
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +615,7 @@ GameObject:
   - component: {fileID: 559314602}
   - component: {fileID: 559314601}
   - component: {fileID: 559314600}
+  - component: {fileID: 559314599}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -621,6 +623,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &559314599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559314598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecca65f85313e84fa36c9984e883da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Test
+  MainMenu: {fileID: 559314598}
+  Optiones: {fileID: 2018658013}
+  Salida: {fileID: 1329952575}
+  PauseToggle: {fileID: 886195213}
 --- !u!114 &559314600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,7 +934,7 @@ GameObject:
   - component: {fileID: 886195215}
   m_Layer: 5
   m_Name: PauseToggle
-  m_TagString: Untagged
+  m_TagString: toggle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1005,7 +1023,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 460013928}
+      - m_Target: {fileID: 460013927}
         m_MethodName: EffectOn
         m_Mode: 0
         m_Arguments:
@@ -1030,7 +1048,6 @@ GameObject:
   - component: {fileID: 897018864}
   - component: {fileID: 897018863}
   - component: {fileID: 897018862}
-  - component: {fileID: 897018861}
   m_Layer: 5
   m_Name: Option
   m_TagString: Untagged
@@ -1056,21 +1073,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 109}
   m_SizeDelta: {x: 75.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &897018861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 897018859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecca65f85313e84fa36c9984e883da9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Test
-  MainMenu: {fileID: 0}
-  Optiones: {fileID: 0}
-  Salida: {fileID: 0}
 --- !u!114 &897018862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,7 +1112,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 897018861}
+      - m_Target: {fileID: 559314599}
         m_MethodName: Options
         m_Mode: 1
         m_Arguments:
@@ -1259,7 +1261,6 @@ GameObject:
   - component: {fileID: 1016357455}
   - component: {fileID: 1016357454}
   - component: {fileID: 1016357453}
-  - component: {fileID: 1016357456}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -1324,7 +1325,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1016357456}
+      - m_Target: {fileID: 559314599}
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -1370,21 +1371,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1016357451}
---- !u!114 &1016357456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1016357451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecca65f85313e84fa36c9984e883da9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Test
-  MainMenu: {fileID: 0}
-  Optiones: {fileID: 0}
-  Salida: {fileID: 0}
 --- !u!1 &1029198868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1439,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1029198868}
+--- !u!1 &1194714771 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1249551745900442, guid: d4283529ca87fff4e9ba92be799c4500,
+    type: 2}
+  m_PrefabInternal: {fileID: 1799675687}
+--- !u!114 &1194714772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1194714771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336b53e5c6a2d534f87f865929b96e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251599976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,11 +1523,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1251599976}
---- !u!4 &1261206793 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500,
-    type: 2}
-  m_PrefabInternal: {fileID: 1799675687}
 --- !u!1 &1321223378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1602,6 @@ GameObject:
   - component: {fileID: 1329952580}
   - component: {fileID: 1329952579}
   - component: {fileID: 1329952578}
-  - component: {fileID: 1329952577}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -1631,21 +1627,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000030517578, y: 58}
   m_SizeDelta: {x: 75.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1329952577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1329952575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecca65f85313e84fa36c9984e883da9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Test
-  MainMenu: {fileID: 0}
-  Optiones: {fileID: 0}
-  Salida: {fileID: 0}
 --- !u!114 &1329952578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,7 +1666,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1329952577}
+      - m_Target: {fileID: 559314599}
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -1811,7 +1792,6 @@ GameObject:
   - component: {fileID: 1380385296}
   - component: {fileID: 1380385295}
   - component: {fileID: 1380385294}
-  - component: {fileID: 1380385297}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -1876,7 +1856,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1380385297}
+      - m_Target: {fileID: 460013927}
         m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
@@ -1922,18 +1902,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1380385292}
---- !u!114 &1380385297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1380385292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74b07b84daa1de649a8e760c44afb33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseActivated: 0
 --- !u!1 &1419115951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,13 +2102,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1531443375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecca65f85313e84fa36c9984e883da9, type: 3}
+  m_Script: {fileID: 11500000, guid: 483cd150eb04b1542844553ccaf41ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 
-  MainMenu: {fileID: 0}
-  Optiones: {fileID: 0}
+  MainMenu: {fileID: 559314598}
+  Optiones: {fileID: 2018658013}
   Salida: {fileID: 0}
+  PauseToggle: {fileID: 0}
 --- !u!114 &1531443378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2299,19 +2268,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 460013926}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 43.849243
+      value: 348.97647
       objectReference: {fileID: 0}
     - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -120.6073
+      value: 82.17251
       objectReference: {fileID: 0}
     - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 92.76591
+      value: 72.937195
       objectReference: {fileID: 0}
     - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2331,14 +2300,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114677820585143096, guid: d4283529ca87fff4e9ba92be799c4500,
         type: 2}
       propertyPath: Volume
       value: 
       objectReference: {fileID: 2004631592}
-    m_RemovedComponents: []
+    - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.78625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.78625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.78625
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114677820585143096, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1920754644
@@ -2488,7 +2470,18 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &2018658013

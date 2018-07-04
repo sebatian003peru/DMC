@@ -20,6 +20,7 @@ TagManager:
   - roomSpawner
   - scoreMana
   - death
+  - toggle
   layers:
   - Default
   - TransparentFX
