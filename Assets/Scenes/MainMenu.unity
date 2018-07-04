@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -426,7 +426,6 @@ GameObject:
   - component: {fileID: 460013924}
   - component: {fileID: 460013923}
   - component: {fileID: 460013927}
-  - component: {fileID: 460013928}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -525,17 +524,6 @@ MonoBehaviour:
   Volume: {fileID: 2004631592}
   Music: {fileID: 154605807}
   pauseActivated: 0
---- !u!114 &460013928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 460013922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 336b53e5c6a2d534f87f865929b96e1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &507452472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,6 +2306,11 @@ Prefab:
     - target: {fileID: 4789847520972764, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.78625
+      objectReference: {fileID: 0}
+    - target: {fileID: 82769345587995588, guid: d4283529ca87fff4e9ba92be799c4500,
+        type: 2}
+      propertyPath: Loop
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114677820585143096, guid: d4283529ca87fff4e9ba92be799c4500, type: 2}
