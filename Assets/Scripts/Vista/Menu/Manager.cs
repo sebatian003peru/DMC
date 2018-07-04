@@ -6,9 +6,9 @@ using UnityEngine;
 public class Manager : MonoBehaviour {
 
 	public string sceneName;
-    public GameObject meinMenu;
-    public GameObject optiones;
-    public GameObject salida;
+    public GameObject MainMenu;
+    public GameObject Optiones;
+    public GameObject Salida;
 
 
 	public void Load()
@@ -20,20 +20,19 @@ public class Manager : MonoBehaviour {
     public void StartGame()
     {
         SceneManager.LoadScene (sceneName);
-        optiones.SetActive(true);
+        Optiones.SetActive(true);
     }
     
 
     public void Options()
     {
-        optiones.SetActive(true);
-        meinMenu.SetActive(false);
+        Optiones.SetActive(true);
+        MainMenu.SetActive(false);
     }
 
     public void Exit()
     {
-        salida.SetActive(true);
-        Debug.Log("sep, saliste");
+        Salida.SetActive(true);
         Application.Quit();
     }
 

@@ -25,12 +25,9 @@ public class menuAudio : MonoBehaviour
 
 
     public void Resume()
-    {
-        
-       
+    {   
 		p_movement.InputActive = true;
-        Time.timeScale = 1;
-        
+        Time.timeScale = 1;   
     }
 
 	public void EffectOn(bool value)

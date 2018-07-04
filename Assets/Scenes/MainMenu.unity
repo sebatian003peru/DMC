@@ -1068,9 +1068,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Test
-  meinMenu: {fileID: 559314598}
-  optiones: {fileID: 2018658013}
-  salida: {fileID: 0}
+  MainMenu: {fileID: 0}
+  Optiones: {fileID: 0}
+  Salida: {fileID: 0}
 --- !u!114 &897018862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1382,9 +1382,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Test
-  meinMenu: {fileID: 0}
-  optiones: {fileID: 886195213}
-  salida: {fileID: 0}
+  MainMenu: {fileID: 0}
+  Optiones: {fileID: 0}
+  Salida: {fileID: 0}
 --- !u!1 &1029198868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,9 +1643,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Test
-  meinMenu: {fileID: 0}
-  optiones: {fileID: 0}
-  salida: {fileID: 1329952575}
+  MainMenu: {fileID: 0}
+  Optiones: {fileID: 0}
+  Salida: {fileID: 0}
 --- !u!114 &1329952578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,9 +2138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 
-  meinMenu: {fileID: 2018658013}
-  optiones: {fileID: 559314598}
-  salida: {fileID: 0}
+  MainMenu: {fileID: 0}
+  Optiones: {fileID: 0}
+  Salida: {fileID: 0}
 --- !u!114 &1531443378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2212,7 +2212,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8607c566cad0a4e4e8fb1a3c98ee3b87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5cdacb24ebd5474f99dc29cc08bf2c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

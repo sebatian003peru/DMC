@@ -6,13 +6,13 @@ public class Goblin : MonoBehaviour {
 
     Vector3 direction = new Vector3(0, 0, 1);
 	Vector3 goblinScale = new Vector3 (1, 1, 1);
-    public float speed =1;
+    Modelo speed = new Modelo();
 
 
     // Move it along its direction.
     void Update()
     {
-        transform.Translate(direction * Time.deltaTime * speed);
+        transform.Translate(direction * Time.deltaTime * speed.MoveSpeed);
 		transform.localScale = goblinScale;
     }
 
